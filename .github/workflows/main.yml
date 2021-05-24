@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-        run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: exec ci
         run: |
           node -v
