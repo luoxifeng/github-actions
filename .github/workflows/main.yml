@@ -11,9 +11,11 @@ jobs:
     name: test job1
     runs-on: ubuntu-latest
     steps:
-      - name: step1
+      - name: pull code
         env:
           ENV: develop
         uses: actions/checkout@v1
+      - name: exec process
         run: |
           node ./ci/test.js
+        
