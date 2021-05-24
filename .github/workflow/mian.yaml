@@ -1,0 +1,16 @@
+name: MyTest
+
+on:
+  branches:
+    - master
+
+jobs:
+  job1: 
+    name: test job1
+    run-on: ubuntu-latest
+    steps:
+      - name: step1
+        env:
+          ENV: develop
+        run: |
+          each $ENV
