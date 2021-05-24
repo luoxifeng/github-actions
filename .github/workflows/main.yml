@@ -15,4 +15,4 @@ jobs:
         env:
           ENV: develop
         run: |
-          echo $ENV
+          echo node -v
