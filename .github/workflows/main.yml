@@ -6,13 +6,13 @@ on:
       - main
 
 jobs:
-  Clone Code: 
+  CloneCode: 
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-  Exec Process:
+  ExecProcess:
     needs: [Clone Code]
     runs-on: ubuntu-latest 
     steps:
