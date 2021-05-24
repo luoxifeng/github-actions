@@ -15,4 +15,4 @@ jobs:
         env:
           ENV: develop
         run: |
-          node -v
+          node ./ci/test.js
