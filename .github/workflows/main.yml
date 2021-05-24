@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step1
-        uses: actions/checkout@v1
         env:
           ENV: develop
+        uses: actions/checkout@v1
         run: |
           node ./ci/test.js
