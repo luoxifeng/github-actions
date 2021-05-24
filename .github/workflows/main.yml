@@ -1,9 +1,9 @@
 name: MyTest
 
 on:
-  branches:
-    - master
-
+  push:
+    branches:
+      - master
 jobs:
   job1: 
     name: test job1
